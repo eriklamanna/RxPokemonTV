@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0324A5D11D1AF32600878101 /* PokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324A5D01D1AF32600878101 /* PokeAPI.swift */; };
 		0374B7331D1AF27E00359901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7321D1AF27E00359901 /* AppDelegate.swift */; };
 		0374B7351D1AF27E00359901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7341D1AF27E00359901 /* ViewController.swift */; };
 		0374B7381D1AF27E00359901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374B7361D1AF27E00359901 /* Main.storyboard */; };
 		0374B73A1D1AF27E00359901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374B7391D1AF27E00359901 /* Assets.xcassets */; };
 		0374B7451D1AF27F00359901 /* RxPokeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7441D1AF27F00359901 /* RxPokeTVTests.swift */; };
+		4EDC2307DC3619A9A42CCE91 /* Pods_RxPokeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0324A5D01D1AF32600878101 /* PokeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAPI.swift; sourceTree = "<group>"; };
 		0374B72F1D1AF27E00359901 /* RxPokeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPokeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0374B7321D1AF27E00359901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0374B7341D1AF27E00359901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		0374B7401D1AF27E00359901 /* RxPokeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxPokeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0374B7441D1AF27F00359901 /* RxPokeTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPokeTVTests.swift; sourceTree = "<group>"; };
 		0374B7461D1AF27F00359901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07A1381971DA47F114FD00A1 /* Pods-RxPokeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV.release.xcconfig"; sourceTree = "<group>"; };
+		34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPokeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46942A630174B3E234E07CF0 /* Pods-RxPokeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EDC2307DC3619A9A42CCE91 /* Pods_RxPokeTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +67,8 @@
 				0374B7311D1AF27E00359901 /* RxPokeTV */,
 				0374B7431D1AF27F00359901 /* RxPokeTVTests */,
 				0374B7301D1AF27E00359901 /* Products */,
+				78D233540E42D69CE8D04B31 /* Pods */,
+				13300256E115906C44C8FD2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +89,7 @@
 				0374B7361D1AF27E00359901 /* Main.storyboard */,
 				0374B7391D1AF27E00359901 /* Assets.xcassets */,
 				0374B73B1D1AF27E00359901 /* Info.plist */,
+				0324A5D01D1AF32600878101 /* PokeAPI.swift */,
 			);
 			path = RxPokeTV;
 			sourceTree = "<group>";
@@ -93,6 +103,23 @@
 			path = RxPokeTVTests;
 			sourceTree = "<group>";
 		};
+		13300256E115906C44C8FD2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78D233540E42D69CE8D04B31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46942A630174B3E234E07CF0 /* Pods-RxPokeTV.debug.xcconfig */,
+				07A1381971DA47F114FD00A1 /* Pods-RxPokeTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -100,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0374B7491D1AF27F00359901 /* Build configuration list for PBXNativeTarget "RxPokeTV" */;
 			buildPhases = (
+				25D8E6BDC13B9D55F58E8E12 /* 📦 Check Pods Manifest.lock */,
 				0374B72B1D1AF27E00359901 /* Sources */,
 				0374B72C1D1AF27E00359901 /* Frameworks */,
 				0374B72D1D1AF27E00359901 /* Resources */,
+				DE481C620CD7E379A6259959 /* 📦 Embed Pods Frameworks */,
+				23EA6E78ECA519DBC8A0C526 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -188,11 +218,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23EA6E78ECA519DBC8A0C526 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25D8E6BDC13B9D55F58E8E12 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE481C620CD7E379A6259959 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0374B72B1D1AF27E00359901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0324A5D11D1AF32600878101 /* PokeAPI.swift in Sources */,
 				0374B7351D1AF27E00359901 /* ViewController.swift in Sources */,
 				0374B7331D1AF27E00359901 /* AppDelegate.swift in Sources */,
 			);
@@ -313,6 +392,7 @@
 		};
 		0374B74A1D1AF27F00359901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46942A630174B3E234E07CF0 /* Pods-RxPokeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -325,6 +405,7 @@
 		};
 		0374B74B1D1AF27F00359901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07A1381971DA47F114FD00A1 /* Pods-RxPokeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -378,6 +459,7 @@
 				0374B74B1D1AF27F00359901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0374B74C1D1AF27F00359901 /* Build configuration list for PBXNativeTarget "RxPokeTVTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +468,7 @@
 				0374B74E1D1AF27F00359901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
