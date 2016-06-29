@@ -1,0 +1,6 @@
+framework module Pods_RxPokeCore {
+  umbrella header "Pods-RxPokeCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

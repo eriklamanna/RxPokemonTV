@@ -8,15 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		0324A5D11D1AF32600878101 /* PokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324A5D01D1AF32600878101 /* PokeAPI.swift */; };
+		033994DC1D23F0F100A116D4 /* RxPokeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 033994DB1D23F0F100A116D4 /* RxPokeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		033994E31D23F0F100A116D4 /* RxPokeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033994D91D23F0F100A116D4 /* RxPokeCore.framework */; };
+		033994EA1D23F0F100A116D4 /* RxPokeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033994E91D23F0F100A116D4 /* RxPokeCoreTests.swift */; };
+		033994EE1D23F0F100A116D4 /* RxPokeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033994D91D23F0F100A116D4 /* RxPokeCore.framework */; };
+		033994EF1D23F0F100A116D4 /* RxPokeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 033994D91D23F0F100A116D4 /* RxPokeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		033994F91D23F16B00A116D4 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033994F81D23F16B00A116D4 /* JSON.swift */; };
+		033994FB1D23F1D200A116D4 /* JSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033994FA1D23F1D200A116D4 /* JSONTests.swift */; };
 		0374B7331D1AF27E00359901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7321D1AF27E00359901 /* AppDelegate.swift */; };
 		0374B7351D1AF27E00359901 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7341D1AF27E00359901 /* ViewController.swift */; };
 		0374B7381D1AF27E00359901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0374B7361D1AF27E00359901 /* Main.storyboard */; };
 		0374B73A1D1AF27E00359901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0374B7391D1AF27E00359901 /* Assets.xcassets */; };
 		0374B7451D1AF27F00359901 /* RxPokeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0374B7441D1AF27F00359901 /* RxPokeTVTests.swift */; };
+		0617902B9F4BB527A92E3130 /* Pods_RxPokeCoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B47656E8FD0ECA83AA98AED /* Pods_RxPokeCoreTests.framework */; };
 		4EDC2307DC3619A9A42CCE91 /* Pods_RxPokeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */; };
+		71472A46E2366D01B24F715B /* Pods_RxPokeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB1FEAAD152FA68B26B43B /* Pods_RxPokeTVTests.framework */; };
+		DE41A9C9870C67F5F8126EB8 /* Pods_RxPokeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54B37D0862D862C201FE745 /* Pods_RxPokeCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		033994E41D23F0F100A116D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374B7271D1AF27E00359901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033994D81D23F0F100A116D4;
+			remoteInfo = RxPokeCore;
+		};
+		033994E61D23F0F100A116D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374B7271D1AF27E00359901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0374B72E1D1AF27E00359901;
+			remoteInfo = RxPokeTV;
+		};
+		033994EC1D23F0F100A116D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0374B7271D1AF27E00359901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 033994D81D23F0F100A116D4;
+			remoteInfo = RxPokeCore;
+		};
 		0374B7411D1AF27E00359901 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0374B7271D1AF27E00359901 /* Project object */;
@@ -26,8 +57,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		033994F51D23F0F100A116D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				033994EF1D23F0F100A116D4 /* RxPokeCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0324A5D01D1AF32600878101 /* PokeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAPI.swift; sourceTree = "<group>"; };
+		033994D91D23F0F100A116D4 /* RxPokeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxPokeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		033994DB1D23F0F100A116D4 /* RxPokeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RxPokeCore.h; sourceTree = "<group>"; };
+		033994DD1D23F0F100A116D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033994E21D23F0F100A116D4 /* RxPokeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxPokeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		033994E91D23F0F100A116D4 /* RxPokeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPokeCoreTests.swift; sourceTree = "<group>"; };
+		033994EB1D23F0F100A116D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		033994F81D23F16B00A116D4 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Common/JSON.swift; sourceTree = "<group>"; };
+		033994FA1D23F1D200A116D4 /* JSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONTests.swift; path = Common/JSONTests.swift; sourceTree = "<group>"; };
 		0374B72F1D1AF27E00359901 /* RxPokeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxPokeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0374B7321D1AF27E00359901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0374B7341D1AF27E00359901 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,15 +91,42 @@
 		0374B7441D1AF27F00359901 /* RxPokeTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPokeTVTests.swift; sourceTree = "<group>"; };
 		0374B7461D1AF27F00359901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07A1381971DA47F114FD00A1 /* Pods-RxPokeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV.release.xcconfig"; sourceTree = "<group>"; };
+		0DEC4709D20BD087D3AD34B9 /* Pods-RxPokeTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTVTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTVTests/Pods-RxPokeTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13A8BB7B0E46E8422C183485 /* Pods-RxPokeTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTVTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTVTests/Pods-RxPokeTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPokeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46942A630174B3E234E07CF0 /* Pods-RxPokeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeTV/Pods-RxPokeTV.debug.xcconfig"; sourceTree = "<group>"; };
+		4B47656E8FD0ECA83AA98AED /* Pods_RxPokeCoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPokeCoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52337E29A9F7695856BD6F29 /* Pods-RxPokeCoreTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeCoreTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeCoreTests/Pods-RxPokeCoreTests.release.xcconfig"; sourceTree = "<group>"; };
+		577FE45A86D55AFA65A1843C /* Pods-RxPokeCoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeCoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeCoreTests/Pods-RxPokeCoreTests.debug.xcconfig"; sourceTree = "<group>"; };
+		82E98FD5D556B753BEAEB35A /* Pods-RxPokeCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeCore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeCore/Pods-RxPokeCore.debug.xcconfig"; sourceTree = "<group>"; };
+		907C2ED5959718F444D82862 /* Pods-RxPokeCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxPokeCore.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxPokeCore/Pods-RxPokeCore.release.xcconfig"; sourceTree = "<group>"; };
+		A54B37D0862D862C201FE745 /* Pods_RxPokeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPokeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7FB1FEAAD152FA68B26B43B /* Pods_RxPokeTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxPokeTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		033994D51D23F0F100A116D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE41A9C9870C67F5F8126EB8 /* Pods_RxPokeCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033994DF1D23F0F100A116D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033994E31D23F0F100A116D4 /* RxPokeCore.framework in Frameworks */,
+				0617902B9F4BB527A92E3130 /* Pods_RxPokeCoreTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0374B72C1D1AF27E00359901 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				033994EE1D23F0F100A116D4 /* RxPokeCore.framework in Frameworks */,
 				4EDC2307DC3619A9A42CCE91 /* Pods_RxPokeTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,17 +135,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71472A46E2366D01B24F715B /* Pods_RxPokeTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033994DA1D23F0F100A116D4 /* RxPokeCore */ = {
+			isa = PBXGroup;
+			children = (
+				033994F71D23F15C00A116D4 /* Common */,
+				033994DB1D23F0F100A116D4 /* RxPokeCore.h */,
+				033994DD1D23F0F100A116D4 /* Info.plist */,
+			);
+			path = RxPokeCore;
+			sourceTree = "<group>";
+		};
+		033994E81D23F0F100A116D4 /* RxPokeCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				033994E91D23F0F100A116D4 /* RxPokeCoreTests.swift */,
+				033994EB1D23F0F100A116D4 /* Info.plist */,
+				033994FA1D23F1D200A116D4 /* JSONTests.swift */,
+			);
+			path = RxPokeCoreTests;
+			sourceTree = "<group>";
+		};
+		033994F71D23F15C00A116D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				033994F81D23F16B00A116D4 /* JSON.swift */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		0374B7261D1AF27E00359901 = {
 			isa = PBXGroup;
 			children = (
 				0374B7311D1AF27E00359901 /* RxPokeTV */,
 				0374B7431D1AF27F00359901 /* RxPokeTVTests */,
+				033994DA1D23F0F100A116D4 /* RxPokeCore */,
+				033994E81D23F0F100A116D4 /* RxPokeCoreTests */,
 				0374B7301D1AF27E00359901 /* Products */,
 				78D233540E42D69CE8D04B31 /* Pods */,
 				13300256E115906C44C8FD2D /* Frameworks */,
@@ -77,6 +188,8 @@
 			children = (
 				0374B72F1D1AF27E00359901 /* RxPokeTV.app */,
 				0374B7401D1AF27E00359901 /* RxPokeTVTests.xctest */,
+				033994D91D23F0F100A116D4 /* RxPokeCore.framework */,
+				033994E21D23F0F100A116D4 /* RxPokeCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +220,9 @@
 			isa = PBXGroup;
 			children = (
 				34B77F962F1EC176879A3827 /* Pods_RxPokeTV.framework */,
+				A54B37D0862D862C201FE745 /* Pods_RxPokeCore.framework */,
+				4B47656E8FD0ECA83AA98AED /* Pods_RxPokeCoreTests.framework */,
+				D7FB1FEAAD152FA68B26B43B /* Pods_RxPokeTVTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,13 +232,72 @@
 			children = (
 				46942A630174B3E234E07CF0 /* Pods-RxPokeTV.debug.xcconfig */,
 				07A1381971DA47F114FD00A1 /* Pods-RxPokeTV.release.xcconfig */,
+				82E98FD5D556B753BEAEB35A /* Pods-RxPokeCore.debug.xcconfig */,
+				907C2ED5959718F444D82862 /* Pods-RxPokeCore.release.xcconfig */,
+				577FE45A86D55AFA65A1843C /* Pods-RxPokeCoreTests.debug.xcconfig */,
+				52337E29A9F7695856BD6F29 /* Pods-RxPokeCoreTests.release.xcconfig */,
+				0DEC4709D20BD087D3AD34B9 /* Pods-RxPokeTVTests.debug.xcconfig */,
+				13A8BB7B0E46E8422C183485 /* Pods-RxPokeTVTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		033994D61D23F0F100A116D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033994DC1D23F0F100A116D4 /* RxPokeCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		033994D81D23F0F100A116D4 /* RxPokeCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033994F41D23F0F100A116D4 /* Build configuration list for PBXNativeTarget "RxPokeCore" */;
+			buildPhases = (
+				A781C060F57CB66C9F1D5564 /* 📦 Check Pods Manifest.lock */,
+				033994D41D23F0F100A116D4 /* Sources */,
+				033994D51D23F0F100A116D4 /* Frameworks */,
+				033994D61D23F0F100A116D4 /* Headers */,
+				033994D71D23F0F100A116D4 /* Resources */,
+				92B98A6FC8A5CBA02CBD4B4D /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RxPokeCore;
+			productName = RxPokeCore;
+			productReference = 033994D91D23F0F100A116D4 /* RxPokeCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		033994E11D23F0F100A116D4 /* RxPokeCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 033994F61D23F0F100A116D4 /* Build configuration list for PBXNativeTarget "RxPokeCoreTests" */;
+			buildPhases = (
+				9E9152898EE62660F0BC9E56 /* 📦 Check Pods Manifest.lock */,
+				033994DE1D23F0F100A116D4 /* Sources */,
+				033994DF1D23F0F100A116D4 /* Frameworks */,
+				033994E01D23F0F100A116D4 /* Resources */,
+				6FFAC139AA7CBA06882E0E42 /* 📦 Embed Pods Frameworks */,
+				D9BC21072D47AD039E469969 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				033994E51D23F0F100A116D4 /* PBXTargetDependency */,
+				033994E71D23F0F100A116D4 /* PBXTargetDependency */,
+			);
+			name = RxPokeCoreTests;
+			productName = RxPokeCoreTests;
+			productReference = 033994E21D23F0F100A116D4 /* RxPokeCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0374B72E1D1AF27E00359901 /* RxPokeTV */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0374B7491D1AF27F00359901 /* Build configuration list for PBXNativeTarget "RxPokeTV" */;
@@ -133,10 +308,12 @@
 				0374B72D1D1AF27E00359901 /* Resources */,
 				DE481C620CD7E379A6259959 /* 📦 Embed Pods Frameworks */,
 				23EA6E78ECA519DBC8A0C526 /* 📦 Copy Pods Resources */,
+				033994F51D23F0F100A116D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				033994ED1D23F0F100A116D4 /* PBXTargetDependency */,
 			);
 			name = RxPokeTV;
 			productName = RxPokeTV;
@@ -147,9 +324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0374B74C1D1AF27F00359901 /* Build configuration list for PBXNativeTarget "RxPokeTVTests" */;
 			buildPhases = (
+				91161019AE75D9D9E024A592 /* 📦 Check Pods Manifest.lock */,
 				0374B73C1D1AF27E00359901 /* Sources */,
 				0374B73D1D1AF27E00359901 /* Frameworks */,
 				0374B73E1D1AF27E00359901 /* Resources */,
+				214D1D21D66338BB5A508A70 /* 📦 Embed Pods Frameworks */,
+				BB28955B97AAAEC785890243 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,6 +351,13 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "WillowTree, Inc.";
 				TargetAttributes = {
+					033994D81D23F0F100A116D4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					033994E11D23F0F100A116D4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0374B72E1D1AF27E00359901;
+					};
 					0374B72E1D1AF27E00359901 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -195,11 +382,27 @@
 			targets = (
 				0374B72E1D1AF27E00359901 /* RxPokeTV */,
 				0374B73F1D1AF27E00359901 /* RxPokeTVTests */,
+				033994D81D23F0F100A116D4 /* RxPokeCore */,
+				033994E11D23F0F100A116D4 /* RxPokeCoreTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		033994D71D23F0F100A116D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033994E01D23F0F100A116D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0374B72D1D1AF27E00359901 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +422,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		214D1D21D66338BB5A508A70 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeTVTests/Pods-RxPokeTVTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		23EA6E78ECA519DBC8A0C526 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,6 +467,111 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		6FFAC139AA7CBA06882E0E42 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeCoreTests/Pods-RxPokeCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91161019AE75D9D9E024A592 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92B98A6FC8A5CBA02CBD4B4D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeCore/Pods-RxPokeCore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E9152898EE62660F0BC9E56 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A781C060F57CB66C9F1D5564 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB28955B97AAAEC785890243 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeTVTests/Pods-RxPokeTVTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9BC21072D47AD039E469969 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxPokeCoreTests/Pods-RxPokeCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE481C620CD7E379A6259959 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +590,23 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		033994D41D23F0F100A116D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033994F91D23F16B00A116D4 /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		033994DE1D23F0F100A116D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033994EA1D23F0F100A116D4 /* RxPokeCoreTests.swift in Sources */,
+				033994FB1D23F1D200A116D4 /* JSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0374B72B1D1AF27E00359901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,6 +628,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		033994E51D23F0F100A116D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033994D81D23F0F100A116D4 /* RxPokeCore */;
+			targetProxy = 033994E41D23F0F100A116D4 /* PBXContainerItemProxy */;
+		};
+		033994E71D23F0F100A116D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0374B72E1D1AF27E00359901 /* RxPokeTV */;
+			targetProxy = 033994E61D23F0F100A116D4 /* PBXContainerItemProxy */;
+		};
+		033994ED1D23F0F100A116D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 033994D81D23F0F100A116D4 /* RxPokeCore */;
+			targetProxy = 033994EC1D23F0F100A116D4 /* PBXContainerItemProxy */;
+		};
 		0374B7421D1AF27E00359901 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0374B72E1D1AF27E00359901 /* RxPokeTV */;
@@ -307,6 +662,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		033994F01D23F0F100A116D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E98FD5D556B753BEAEB35A /* Pods-RxPokeCore.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RxPokeCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		033994F11D23F0F100A116D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 907C2ED5959718F444D82862 /* Pods-RxPokeCore.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RxPokeCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeCore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		033994F21D23F0F100A116D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577FE45A86D55AFA65A1843C /* Pods-RxPokeCoreTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RxPokeCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxPokeTV.app/RxPokeTV";
+			};
+			name = Debug;
+		};
+		033994F31D23F0F100A116D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52337E29A9F7695856BD6F29 /* Pods-RxPokeCoreTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = RxPokeCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxPokeTV.app/RxPokeTV";
+			};
+			name = Release;
+		};
 		0374B7471D1AF27F00359901 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,6 +818,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RxPokeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeTV;
@@ -409,6 +832,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = RxPokeTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willowtree.RxPokeTV;
@@ -418,6 +842,7 @@
 		};
 		0374B74D1D1AF27F00359901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DEC4709D20BD087D3AD34B9 /* Pods-RxPokeTVTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RxPokeTVTests/Info.plist;
@@ -430,6 +855,7 @@
 		};
 		0374B74E1D1AF27F00359901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A8BB7B0E46E8422C183485 /* Pods-RxPokeTVTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = RxPokeTVTests/Info.plist;
@@ -443,6 +869,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		033994F41D23F0F100A116D4 /* Build configuration list for PBXNativeTarget "RxPokeCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033994F01D23F0F100A116D4 /* Debug */,
+				033994F11D23F0F100A116D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		033994F61D23F0F100A116D4 /* Build configuration list for PBXNativeTarget "RxPokeCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				033994F21D23F0F100A116D4 /* Debug */,
+				033994F31D23F0F100A116D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0374B72A1D1AF27E00359901 /* Build configuration list for PBXProject "RxPokeTV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
